@@ -14,14 +14,14 @@ cd Arkovia-Linux-Full-Node
 bash build.sh
 ```
 
-The build fetches and verifies upstream source commit [`52172c5079dc85e643a566b2cbeccfa5320a7a3a`](https://github.com/mycreationhaven/Arkovia-Blockchain/tree/52172c5079dc85e643a566b2cbeccfa5320a7a3a), applies this repository's Linux packaging, and creates:
+The build fetches and verifies upstream source commit [`dabcf44d51dcf5047118ca47347465a97b26369a`](https://github.com/mycreationhaven/Arkovia-Blockchain/tree/dabcf44d51dcf5047118ca47347465a97b26369a), applies this repository's Linux packaging, and creates:
 
 ```text
 dist/arkovia-linux-full-node.tar.gz
 dist/arkovia-linux-full-node.tar.gz.sha256
 ```
 
-It does not build from a moving branch. The archive includes the compiled node, browser wallet, original genesis data, bundled dependencies, corresponding core source, and license notices.
+It does not build from a moving branch. The archive includes the compiled node, browser wallet, installable Arkovia Signer PWA under `/signer/`, original genesis data, bundled dependencies, corresponding core source, and license notices.
 
 ## Install
 
