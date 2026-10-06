@@ -1,12 +1,16 @@
 # Compiled package
 
-The validated package is `arkovia-linux-full-node.tar.gz` with SHA-256:
+The previously validated Linux package checksum in this folder belongs to an older pinned Arkovia source revision and must not be presented as the checksum for the signer-enabled package.
 
-```text
-3c3063b13fdff739bf766dd7ac4aafb0ba8941ff767cd4ce45adec3ca0f32249
+Build the current pinned source revision with:
+
+```bash
+bash build.sh
 ```
 
-The package is intentionally not committed to ordinary Git history. Build the
-same pinned source revision with `bash build.sh`. The adjacent checksum records
-the validated package previously produced from that revision and can be used
-to compare a downloaded copy of that package.
+The build creates:
+
+- `dist/arkovia-linux-full-node.tar.gz`
+- `dist/arkovia-linux-full-node.tar.gz.sha256`
+
+The current source pin includes the installable Arkovia Signer PWA under `html/www/signer/`. Always use the checksum generated beside the package you actually build.
