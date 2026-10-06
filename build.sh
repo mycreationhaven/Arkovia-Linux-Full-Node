@@ -3,7 +3,7 @@ set -euo pipefail
 
 project_root=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 upstream_url=https://github.com/mycreationhaven/Arkovia-Blockchain.git
-upstream_commit=52172c5079dc85e643a566b2cbeccfa5320a7a3a
+upstream_commit=dabcf44d51dcf5047118ca47347465a97b26369a
 
 command -v git >/dev/null || { echo 'Install Git first.' >&2; exit 1; }
 mkdir -p "$project_root/dist"
